@@ -112,6 +112,10 @@
     position: relative;
     align-items: center;
     cursor: pointer;
+
+}
+.toggle label div{
+    box-shadow: 0 0 7px 7px rgba(99, 99, 99, .2);
 }
 
 
@@ -126,7 +130,7 @@
     background: var(--bg-dark);
     min-width: 175px;
     max-width: 175px;
-    height: 326px;
+    height: 375px;
     /* animation: drawerOpen 0.5s once; */
     box-shadow: 0 2px 10px 0 rgba(99, 99, 99, .2);
 }

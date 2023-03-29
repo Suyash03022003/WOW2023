@@ -105,10 +105,11 @@ const Header = () => {
                 })}
 
                 <label
-                    class={`${styles.toggle} ${showMenu ? "hidden" : "inline-flex"
-                        }`
+                    class={`${styles.toggle} 
+                        inline-flex
+                    `   
                     }
-                >
+                >Change Theme
                     <label class="relative inline-flex items-center cursor-pointer">
                         <input
                             type="checkbox"
@@ -173,6 +174,23 @@ const Header = () => {
                         );
                     })}
                 </ul>
+                <label
+                    class={`${styles.toggle} 
+                        inline-flex py-5
+                    `
+                    }
+                >
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input
+                            type="checkbox"
+                            value=""
+                            className="sr-only peer"
+                            defaultChecked
+                            onClick={() => changeTheme()}
+                        />
+                        <div className="w-11 h-6 bg-white peer-focus:outline-none rounded-full peer dark:bg-gray-500 peer-checked:bg-grey peer-checked:after:translate-x-full peer-checked:after:bg-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-grey after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all border-gray-300 dark:border-gray-600"></div>
+                    </label>
+                </label>
             </div>
         </div>
     );
