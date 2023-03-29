@@ -1,0 +1,166 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.what_main {
+    padding-bottom: 2.5rem;
+    width: 100%;
+    padding-top: 20px;
+    
+}
+
+.what_container {
+    display: flex;
+    align-items: center;
+}
+
+.what_row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    margin-left: 2%;
+}
+
+.what_is_gdsc {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.what_logo_svg {
+    width: 25%;
+    height: auto;
+}
+
+.what_head {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.what_loc1 {
+    right: 0;
+    width: 40%;
+    height: auto;
+    margin-top: -25px;
+}
+
+.what_loc2 {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 6%;
+    right: 17%;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.what_logo {
+    padding: 0;
+    width: 40%;
+    height: auto;
+}
+
+.what_content {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.what_para1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    text-align: justify;
+}
+
+.what_para2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.what_para3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.what_span {
+    color: #3B82F6;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .what_row1 {
+        justify-content: flex-start;
+        width: 60%;
+    }
+
+    .what_is_gdsc {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .what_head {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .what_loc1 {
+        display: block;
+    }
+
+    .what_loc2 {
+        display: block;
+    }
+
+    .row2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .what_logo {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .what_is_gdsc {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .what_logo_svg {
+        width: 16.666667%;
+    }
+
+    .what_head {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .row2 {
+        flex-direction: row;
+    }
+
+    .what_content {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .row2 {
+        flex-direction: row;
+    }
+}

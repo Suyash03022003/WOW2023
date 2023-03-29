@@ -1,0 +1,311 @@
+.main_pass {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.pass {
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.hr {
+    background-image: linear-gradient(to right, #DB4235, #EF990D, #3DA247, #3B84D9);
+    height: 4px;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.heading {
+    /* color: #ffffff; */
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+.aside {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+.discord {
+    transform: rotate(180deg);
+}
+
+.row1 {
+    margin-top: 25px;
+}
+
+.pass_head {
+    display: flex;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pass_svg {
+    width: 1.5rem;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.content_row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.content_card1 {
+    display: flex;
+    margin-bottom: 0.75rem;
+    /* color: #ffffff; */
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.card_content {
+    width: 1.25rem;
+    height: auto;
+}
+
+.content_row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.aside {
+    width: 250px;
+}
+
+.register {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4180EA;
+    /* color: #ffffff; */
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .pass {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row1 {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+
+    .pass_head {
+        justify-content: flex-start;
+    }
+
+    .content {
+        margin-left: 100px;
+    }
+
+    .card_content {
+        width: 1.5rem;
+    }
+
+    .content_row2 {
+        margin-left: 50px;
+    }
+
+    .aside {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 50vh;
+    }
+
+    .register {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 66.666667%;
+    }
+}
+
+@media (min-width: 1536px) {
+    .heading {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
+    }
+
+    .content {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
+    }
+
+.register {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
+    }
+}
+
+/* 
+@media screen and (max-width: 1000px) {
+    .aside {
+        width: 100%;
+        height: 20vh;
+        background-image: none;
+    }
+    
+    .pass {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .aside {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .register {
+        font-size: 20px;
+    }
+
+    .main_pass {
+        padding: 20px 5%;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .content {
+        font-size: 20px;
+    }
+    
+    .button {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pass_head {
+        font-size: larger;
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .content {
+        padding-left: 22%;
+        display: block;
+        font-size: 20px;
+    }
+
+    .button_div {
+        display: block;
+        width: 100%;
+    }
+
+    .button {
+        width: 90%;
+        text-align: center;
+    }
+
+    .button_wow {
+        width: 100%;
+    }
+
+    .register {
+        width: 50%;
+    }
+
+    .svg_wow {
+        margin-top: 10px;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 25px;
+    }
+
+    .content {
+        padding-left: 13%;
+        display: block;
+        font-size: 18px;
+    }
+
+    .button {
+        width: 85%;
+    }
+
+    .register {
+        width: 70%;
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content {
+        padding-left: 10%;
+        font-size: 15px;
+        display: block;
+    }
+
+    .register {
+        width: 90%;
+    }
+} */
