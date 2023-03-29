@@ -93,7 +93,11 @@ const Header = () => {
                         className={``}
                         onClick={() => changeactiveLink(nav.id)}
                     >
-                        <li id="" key={nav.id} className={` ${(theme === 'light' ? 'text-[#777777]' : 'text-white')} ${styles.nav_links} ${!showMenu ? 'py-[5px]' : 'py-[5px]'} ${(activeIndex === nav.id) && (theme === 'dark' ? styles.activeLinkDark : styles.activeLinkLight)} py-1 flex flex-col justify-center`}
+                        <li id="" key={nav.id} className={` 
+                        ${(theme === 'light' ? 'text-[#777777]' : 'text-white')} 
+                        ${styles.nav_links} 
+                        ${showMenu && 'py-[5px]' } 
+                        ${(activeIndex === nav.id) && (theme === 'dark' ? styles.activeLinkDark : styles.activeLinkLight)} flex px-2 flex-col justify-center`}
                         >
                             {nav.title}
                         </li>

@@ -24,16 +24,16 @@
 
 .activeLinkDark {
     border-bottom: 5px solid #F57A1C;
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
+    padding: 15px;
 }
 
 .activeLinkLight {
-    font-size: large;
     font-weight: 550;
     background-color: #4c8bf5;
-    height: 40px;
-    padding: 2.5px 10px;
+    width: 125px;
+    padding: 10px 5px;
     border-radius: 13px;
     color: white;
 }
@@ -95,13 +95,19 @@
 }
 
 .nav_links {
-    
+    /* min-width: 75px; */
+    min-width: max-content;
     text-align: center;
-    font-size: 1.25rem;
     cursor: pointer;
+    font-weight: 600;
     list-style: none;
+    font-size: medium;
+
 }
 
+#listItem:nth-child(2) li {
+    min-width: 125px;
+}
 .toggle {
     position: relative;
     align-items: center;
@@ -166,7 +172,7 @@ input:checked~.block {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 30px;
+        gap: 20px;
     }
 }
 
@@ -180,8 +186,5 @@ input:checked~.block {
         transform: scale(1.05, 1.05);
     }
 
-    .nav_links {
-        font-size: 18px;
-        /* 18px */
-    }
+    
 }

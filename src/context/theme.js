@@ -5,7 +5,7 @@ export const themeContext = createContext();
 
 const ThemeState = (props) => {
 
-    const [theme, settheme] = useState("light");
+    const [theme, settheme] = useState("dark");
 
 
     return(
