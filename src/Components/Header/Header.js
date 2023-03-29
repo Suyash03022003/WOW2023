@@ -109,7 +109,7 @@ const Header = () => {
                         inline-flex
                     `   
                     }
-                >Change Theme
+                >
                     <label class="relative inline-flex items-center cursor-pointer">
                         <input
                             type="checkbox"
