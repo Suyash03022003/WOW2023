@@ -1,0 +1,44 @@
+.mapArtworkHolder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: -690px;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    .mapArtwork {
+        position: absolute;
+
+        pointer-events: all;
+
+        .nagpurText {
+            .hoverRed {
+            }
+        }
+
+        &:hover {
+            .actualMap {
+                stroke: var(--text-color);
+            }
+
+            .nagpurText {
+                .fillPure {
+                    fill: var(--text-color);
+                }
+
+                .hoverRed {
+                    fill: #d24336;
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .mapArtworkHolder {
+        display: none;
+    }
+}

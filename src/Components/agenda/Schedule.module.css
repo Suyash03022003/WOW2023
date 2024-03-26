@@ -1,0 +1,11 @@
+.scheduletable {
+  padding-bottom: 50px;
+  margin: auto;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  #scheduletable {
+    overflow: scroll;
+  }
+}

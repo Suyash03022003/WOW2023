@@ -1,5 +1,5 @@
 .main_pass {
-    
+    background-color: var(--background-color);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 3%;
@@ -7,6 +7,7 @@
 }
 
 .pass {
+    background-color: var(--background-dark-color);
     border-radius: 0.5rem;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -19,14 +20,18 @@
 }
 
 .hr {
-    background-image: linear-gradient(to right, #DB4235, #EF990D, #3DA247, #3B84D9);
+    background-image: linear-gradient(to right,
+            #db4235,
+            #ef990d,
+            #3da247,
+            #3b84d9);
     height: 4px;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
 
 .heading {
-    /* color: #ffffff; */
+    color: var(--text-color);
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 700;
@@ -61,6 +66,8 @@
 .pass_svg {
     width: 1.5rem;
     height: auto;
+    fill: var(--text-color);
+    color: var(--text-color);
 }
 
 .content {
@@ -78,21 +85,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 5px;
 }
+
 
 .content_card1 {
     display: flex;
     margin-bottom: 0.75rem;
-    /* color: #ffffff; */
+    color: var(--text-color);
     align-items: center;
     gap: 1.25rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
 .card_content {
-    width: 1.25rem;
-    height: auto;
+    width: 1.75rem;
+    height: 2.5rem;
+}
+
+.card_content svg , .card_content img {
+    min-height: 250px;
 }
 
 .content_row2 {
@@ -100,18 +113,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 5px;
 }
 
 .aside {
-    width: 250px;
+    width: 300px;
+}
+
+.aside a {
+    text-align: center;
+    width: 100%;
 }
 
 .register {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    background-color: #4180EA;
-    /* color: #ffffff; */
+    background-color: var(--google-blue);
+    color: var(--white-color);
     font-size: 1.25rem;
     line-height: 1.75rem;
     width: 100%;
@@ -119,6 +137,13 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .content_row1 {
+        width: 70%;
+    }
+}
+
 
 @media (min-width: 768px) {
     .content {
@@ -136,7 +161,7 @@
     }
 
     .row1 {
-        margin-top: 0;
+        margin-top: 25px;
         margin-left: 50px;
     }
 
@@ -157,6 +182,7 @@
     }
 
     .aside {
+        background: url("/src/assets/allAccessPass/aside.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -186,7 +212,7 @@
         /* 32px */
     }
 
-.register {
+    .register {
         font-size: 1.5rem;
         /* 24px */
         line-height: 2rem;

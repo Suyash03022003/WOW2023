@@ -12,10 +12,12 @@
   position: relative;
   z-index: 1;
   padding: 2.5px;
-  height: max-content;
+  /* height: 90%; */
   border-radius: 15px;
-  width: 23.5%;
-  font-size: 25px;
+  min-width: 375px;
+  
+/*   
+  font-size: 25px; */
 }
 
 .content {
@@ -26,23 +28,24 @@
   width: 100%;
   padding: 2rem 0;
   border-radius: 15px;
+  max-height: 200px;
 }
 
 .img {
   display: flex;
   justify-content: center;
-  width: 100%;
+  /* width: 75%; */
   margin-bottom: 10px;
 }
 
 .img > svg {
-  transform: scale(1.05);
+  width: 75%;
+  /* transform: scale(1.05); */
 }
 
 .text {
   text-align: center;
   width: 100%;
-  font-weight: 600;
 }
 
 @media screen and (max-width: 1250px) {

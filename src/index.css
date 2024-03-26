@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --new-gray: #7a7a7a;
-    --white-color: #f5f5f5;
-    --bg-dark: #212224;
-    --pass-dark: #191B1D;
-    --font-light : white;
-}
-
-*{ 
-    scroll-behavior: smooth;
-}
-
 @font-face {
     font-family: "Product Sans";
     src: url("./assets/fonts/Product\ Sans\ Regular.ttf");
@@ -24,27 +12,90 @@
     src: url("./assets/fonts/Product\ Sans\ Bold.ttf");
 }
 
+:root {
+    /* --new-gray: #7a7a7a;
+    --white-color: #f5f5f5;
+    --bg-dark: #212224;
+    --pass-dark: #191b1d;
+    --font-light: white; */
 
+    --total-header-height: 62px;
+
+    --orange-color: #f57a1c;
+    --white-color: #f5f5f5;
+
+    /* google colors */
+    --google-blue: #4285f4;
+    --google-red: #ea4335;
+    --google-yellow: #fbbc05;
+    --google-green: #34a853;
+
+    --background-color: #212224;
+    --background-light-color: #2a2d31;
+    --background-dark-color: #191b1d;
+
+    --background-over-bg-color: #7a7a7a;
+    /* 7a7a7a */
+
+    --text-color: #ffffff;
+    --text-inverse-color: #000000;
+
+    --floating-text-over-bg-color: #343539;
+
+    --shadow-color: #00000040;
+
+    --partner-gdsc-text-color: #ffffff;
+
+    --text-rgb-color: 255, 255, 255;
+    --text-inverse-rgb-color: 0, 0, 0;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     outline: none;
     border: none;
 
     text-decoration: none;
     list-style: none;
-}
-
-body {
-    font-family: "Product Sans", 'PT Sans', sans-serif;
     scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: proximity;
 }
 
+body,
+html {
+    font-family: "Product Sans", "PT Sans", sans-serif;
+    scroll-behavior: smooth;
+
+    color: var(--text-color);
+
+    overflow-x: hidden;
+}
+
+body.theme-light {
+    --background-color: #ffffff;
+    --background-light-color: #fefefe;
+    --background-dark-color: #e5e5e5;
+
+    --background-over-bg-color: #bfbfbf;
+
+    --text-color: #000000;
+    --text-inverse-color: #ffffff;
+
+    --floating-text-over-bg-color: #efefef;
+
+    --shadow-color: #0000000f;
+
+    --partner-gdsc-text-color: #000000;
+
+    --text-rgb-color: 0, 0, 0;
+    --text-inverse-rgb-color: 255, 255, 255;
+}
 
 ::-webkit-scrollbar {
     width: 8px;

@@ -1,0 +1,22 @@
+.artwork {
+    stroke: #777777;
+
+    pointer-events: all;
+
+    svg:hover,
+    g:hover {
+        path {
+            stroke: var(--text-color);
+        }
+    }
+}
+
+.secondMonument:hover path {
+    fill: var(--text-inverse-color);
+}
+
+@media screen and (max-width: 950px) {
+    .artwork {
+        display: none;
+    }
+}

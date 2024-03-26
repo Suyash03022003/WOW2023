@@ -1,12 +1,12 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .what_main {
     padding-bottom: 2.5rem;
     width: 100%;
     padding-top: 20px;
-    
+    background-color: var(--background-color);
 }
 
 .what_container {
@@ -24,6 +24,7 @@
 }
 
 .what_is_gdsc {
+    color: var(--text-color);
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 600;
@@ -35,16 +36,16 @@
 }
 
 .what_head {
+    color: var(--text-color);
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 600;
 }
 
 .what_loc1 {
-    right: 0;
+    display: none;
     width: 40%;
     height: auto;
-    margin-top: -25px;
 }
 
 .what_loc2 {
@@ -71,6 +72,7 @@
 }
 
 .what_content {
+    color: var(--text-color);
     width: 80%;
     margin-left: 5%;
     margin-right: 10%;
@@ -96,7 +98,7 @@
 }
 
 .what_span {
-    color: #3B82F6;
+    color: #3b82f6;
     font-weight: 700;
 }
 

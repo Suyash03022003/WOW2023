@@ -1,0 +1,39 @@
+.faqsDivDark {
+  background: rgba(32, 33, 36, 1);
+}
+.faqsSectionLight,
+.faqsSectionDark {
+  width: 80%;
+  max-width: 900px;
+  font-family: "Google Sans";
+  margin: 0 auto;
+  padding: 0 0 2rem;
+}
+
+
+.faqsSectionLight div section,
+.faqsSectionDark div section {
+  justify-content: center !important;
+  padding: 0 25px;
+}
+.faqsSectionLight div,
+.faqsSectionLight div section h2 {
+  background: #fcfcfc;
+}
+.faqsSectionDark div,
+.faqsSectionDark div section h2 {
+  background: rgba(32, 33, 36, 1);
+  color: white !important;
+}
+.faqsSectionDark svg {
+  fill: white !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .faqsSectionLight,
+  .faqsSectionDark {
+    width: 90%;
+  }
+}

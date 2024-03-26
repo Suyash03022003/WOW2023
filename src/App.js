@@ -1,38 +1,53 @@
 import "./App.css";
+import aos from "aos";
 
-import "./App.css";
-import Header from './Components/Header/Header';
+import "aos/dist/aos.css";
+
+import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import WhatisGDSC from "./Components/WhatIsGDSC/WhatIsGDSC.js";
-import AllAccessPass from "./Components/allAccessPass/allAccessPass";
+import AllAccessPass from "./Components/allAccessPass/AllAccessPass";
 import WeAreSpeakingLouderMain from "./Components/weAreSpeakingLouderSection/WeAreSpeakingLouderMain";
 import ThingsYouDontWantToMissMain from "./Components/thingsYouDontWantToMissSection/ThingsYouDontWantToMissMain";
-import CommunityPartner from "./Components/communityPartner/CommunityPartner";
-
+import RegionalGDSCs from "./Components/regionalGDSCs/CommunityPartner";
+// import Agenda from "./Components/agenda/Schedule";
+import { Schedule } from "./Components/agenda/Schedule";
+import CommunityPartner from "./Components/communityPartners/CommunityPartner";
 import { ThemeProvider } from "./hooks/useTheme";
-// import { useContext, useEffect } from "react";
-// import { themeContext } from "./context/theme";
+import { useEffect } from "react";
+import FAQs from "./Components/FAQs/FAQs";
+import Footer from "./Components/footer/Footer";
+import Venue from './Components/venue/Venue';
+// import CommunityPartner from './Components/communityPartner/CommunityPartner';
+
 
 function App() {
+    useEffect(() => {
+        aos.init({
+            duration: 1828.3268, // birthday digits (everybody?) :)...
+            // initClassName: "sb-initial-anim",
+            // once: true,
+            // mirror: true,
+            // offset: 50,
+            // debounceDelay: 100,
+            // throttleDelay: 100,
+        });
+    }, []);
 
-    // const { theme } = useContext(themeContext);
-    // useEffect(() => {
-    //     var style = getComputedStyle(document.documentElement).getPropertyValue('--bg-dark')
-    //     if (style === '#fff' || style === 'white' || style === '#ffffff') {
-    //         document.documentElement.style.setProperty('--bg-dark', "#212224")
-    //     } else {
-    //         document.documentElement.style.setProperty('--bg-dark', "#fff")
-    //     }
-    // }, [theme])
     return (
         <ThemeProvider>
-            <Header />
+            <Header location={"Home"}/>
             <Hero />
             <WhatisGDSC />
             <AllAccessPass />
             <WeAreSpeakingLouderMain />
             <ThingsYouDontWantToMissMain />
-            <CommunityPartner />
+            <Venue/>
+            <Schedule/>
+            <RegionalGDSCs />
+            {/* <CommunityPartner /> */}
+            <FAQs />
+            <Footer />
         </ThemeProvider>
     );
 }

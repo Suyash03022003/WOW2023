@@ -1,39 +1,41 @@
-import { ReactComponent as GlobeSvg } from "../../assets/thingsYouDontWantToMiss/globe.svg";
-import { ReactComponent as PersonalComputerSvg } from "../../assets/thingsYouDontWantToMiss/personal-computer.svg";
-import { ReactComponent as SliceOfPizza } from "../../assets/thingsYouDontWantToMiss/slice-of-pizza.svg";
-import { ReactComponent as ToolsSvg } from "../../assets/thingsYouDontWantToMiss/tools.svg";
+import { ReactComponent as Codelabs } from "../../assets/thingsYouDontWantToMiss/codelabs.svg";
+import { ReactComponent as ESports } from "../../assets/thingsYouDontWantToMiss/esports.svg";
+import { ReactComponent as Food } from "../../assets/thingsYouDontWantToMiss/food.svg";
+import { ReactComponent as Keynote } from "../../assets/thingsYouDontWantToMiss/keynote.svg";
+import { ReactComponent as Networking } from "../../assets/thingsYouDontWantToMiss/networking.svg";
+import { ReactComponent as Panel } from "../../assets/thingsYouDontWantToMiss/panel.svg";
 
 const thingsYouDontWantToMissData = [
   {
     id: 1,
     title: "Workshops & Codelabs",
-    svg: <ToolsSvg></ToolsSvg>,
-    text: `Full-day workshops, hands-on experiences, hacking and debugging events, all centered on your favorite Google technologies.`,
+    svg: <Codelabs></Codelabs>,
+    text: `Workshops offer hands-on experience with new technologies and techniques. You can learn about new tools and get practical tips for applying them in your work.`,
   }, {
     id: 2,
-    title: "Workshops & Codelabs",
-    svg: <ToolsSvg></ToolsSvg>,
-    text: `Full-day workshops, hands-on experiences, hacking and debugging events, all centered on your favorite Google technologies.`,
+    title: "Keynote speeches",
+    svg: <Keynote></Keynote>,
+    text: `Keynote speeches are typically given by industry leaders and experts who can provide valuable insights into the latest trends and innovations in your field.`,
   }, {
     id: 3,
-    title: "Workshops & Codelabs",
-    svg: <ToolsSvg></ToolsSvg>,
-    text: `Full-day workshops, hands-on experiences, hacking and debugging events, all centered on your favorite Google technologies.`,
+    title: "Panel Discussions",
+    svg: <Panel></Panel>,
+    text: `Panels bring together experts to discuss hot topics and share their insights. You can gain new perspectives and learn from the experiences of others in your field.`,
   }, {
     id: 4,
-    title: "Workshops & Codelabs",
-    svg: <ToolsSvg></ToolsSvg>,
-    text: `Full-day workshops, hands-on experiences, hacking and debugging events, all centered on your favorite Google technologies.`,
+    title: "Food & Swags",
+    svg: <Food></Food>,
+    text: `Who doesn't wants the exciting Swags and the food? That's why we're happy to announce that we'll be providing exciting swags to commemorate this special event. And because we want our guests to have a great time from start to finish, we'll also be offering delicious food.`,
   }, {
     id: 5,
-    title: "Workshops & Codelabs",
-    svg: <ToolsSvg></ToolsSvg>,
-    text: `Full-day workshops, hands-on experiences, hacking and debugging events, all centered on your favorite Google technologies.`,
-  }, {
+    title: "Networking",
+    svg: <Networking></Networking>,
+    text: `Networking is a key aspect of any technical event. It provides an opportunity to meet and connect with other professionals in your industry, exchange ideas, and build relationships that can help advance your career.`,
+  } ,{
     id: 6,
-    title: "Workshops & Codelabs",
-    svg: <ToolsSvg></ToolsSvg>,
-    text: `Full-day workshops, hands-on experiences, hacking and debugging events, all centered on your favorite Google technologies.`,
+    title: "E-Sports",
+    svg: <ESports></ESports>,
+    text: `The Esports event is a perfect chance to show off your gaming prowess and compete in popular games, win prizes and bragging rights up for grabs.`,
   }
   // {
   //   id: 1,

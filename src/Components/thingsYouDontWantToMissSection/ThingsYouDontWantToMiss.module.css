@@ -1,39 +1,40 @@
 .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* margin-bottom: 5rem; */
-  padding: 4rem 0;
-  padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 5rem; */
+    padding: 4rem 0;
+    padding-bottom: 0;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 .heading h1 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  text-align: center;
-  display: flex;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
 }
 
 .heading h1 > span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 4rem 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 5%;
 }
 
 .data-cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 2.5rem;
-  grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2.5rem;
+    grid-auto-rows: 1fr;
 }
 /* 
 .data-cards > div:nth-child(1) {
@@ -62,40 +63,40 @@
 } */
 
 @media screen and (max-width: 1250px) {
-  .heading h1 {
-    margin-bottom: 2rem;
-    font-size: 28px;
-    padding: 0 2rem;
-  }
-  .content {
-    padding: 2rem 4%;
-  }
+    .heading h1 {
+        margin-bottom: 2rem;
+        font-size: 28px;
+        padding: 0 2rem;
+    }
+    .content {
+        padding: 2rem 4%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .data-cards {
-    display: flex;
-    flex-direction: column;
-  }
+    .data-cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.mobile-eyes{
-  display: none !important;
+.mobile-eyes {
+    display: none !important;
 }
 
 @media screen and (max-width: 650px) {
-  .heading h1 {
-    display: inline-block;
-    flex-direction: column;
-  }
-  .heading h1 > span{
-    display: inline-block;
-    transform: translate(-5px, 0) scale(0.9);
-  }
-  .mobile-eyes{
-    display: inline-block !important;
-  }
-  .eye-svg{
-    display: none !important;
-  }
+    .heading h1 {
+        display: inline-block;
+        flex-direction: column;
+    }
+    .heading h1 > span {
+        display: inline-block;
+        transform: translate(-5px, 0) scale(0.9);
+    }
+    .mobile-eyes {
+        display: inline-block !important;
+    }
+    .eye-svg {
+        display: none !important;
+    }
 }
